@@ -55,11 +55,14 @@
 % online abstract environment
 %----------------------------------------
 \newenvironment{abstract_online}[4] %{title}{author}{affiliation}{type}
-{\filbreak %avoid page break
+{%\filbreak %avoid page break
+
+	\parbox{\textwidth}{%
+	{\large \bfseries #1}}\nopagebreak
 	
-	{\large \bfseries #1}
-	
-	{\bfseries \itshape #2} \hfill {#3}
+	%{\bfseries \itshape #2}
+	\parbox{\textwidth}{%
+	{\bfseries #3}}\nopagebreak
 	
 	\textcolor{mygray}{#4}
 	
