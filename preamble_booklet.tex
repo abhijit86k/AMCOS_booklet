@@ -1,6 +1,6 @@
 %======================================================
 % This file is part of
-% "AMCOS_booklet"
+%  AMCOS_booklet 
 % Version 1.1 (04/07/2019)
 % A LaTeX template for conference books of abstracts
 %
@@ -21,7 +21,8 @@
 \definecolor{myorange}{RGB}{255,117,40}
 \definecolor{mygray}{RGB}{164, 168, 172}
 \definecolor{mywhite}{RGB}{235, 238, 231}
-\definecolor{myblue}{RGB}{52, 115, 116}
+%\definecolor{myblue}{RGB}{52, 115, 116}
+\definecolor{myblue}{RGB}{22, 139, 238}
 
 \newcommand{\primarycolor}{myblue}
 \newcommand{\secondarycolor}{mywhite}
@@ -62,7 +63,7 @@
 	
 	%{\bfseries \itshape #2}
 	\parbox{\textwidth}{%
-	{\bfseries #3}}\nopagebreak
+	{#3}}\nopagebreak
 	
 	\textcolor{mygray}{#4}
 	
@@ -77,7 +78,7 @@
 	
 	{\large \bfseries #1}
 	
-	{\bfseries \itshape #2,} \textcolor{mygray}{#3} \hfill {#4}
+	{\bfseries \itshape #2,} {#3} %\hfill {#4}
 	
 	
 }
@@ -100,6 +101,8 @@
 %----------------------------------------
 
 \newcommand{\KLtag}{\tikz[baseline={([yshift=-.8ex]current bounding box.center)}]  \node[circle, inner sep=2pt, minimum size=0.5em, color=black, fill=\KLcolor]{\small \bfseries KL};} %colored circle with tag
+
+\newcommand{\Tutorialtag}{\tikz[baseline={([yshift=-.8ex]current bounding box.center)}]  \node[circle, inner sep=2pt, minimum size=0.5em, color=black, fill=\KLcolor]{\small \bfseries T};} %colored circle with tag
 
 \newcommand{\IStag}{\tikz[baseline={([yshift=-.8ex]current bounding box.center)}]  \node[circle, inner sep=2pt, minimum size=0.5em, color=black, fill=\IScolor]{\small \bfseries IS};} %colored circle with tag
 
